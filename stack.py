@@ -28,7 +28,14 @@ class stack:
             while temp:
                 print(temp.data)
                 temp=temp.next
+    def rev(self):
+        temp=self.top
+        while temp:
+            st1.push(Node(temp.data))
+            temp=temp.next
+       
 st=stack()
+st1=stack()
 st.push(Node(10))
 st.push(Node(20))
 st.push(Node(30))
@@ -37,3 +44,5 @@ st.push(Node(50))
 st.print()
 st.pop()
 st.print()
+st.rev()
+st1.print()
